@@ -1,37 +1,87 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="980" height="590" viewBox="0 0 980 590" role="img" aria-label="LymonDa profile information card">
+<svg xmlns="http://www.w3.org/2000/svg" width="490" height="520" viewBox="0 0 490 520" role="img" aria-label="LymonDa profile information card">
 <defs>
-<linearGradient id="border" x1="0" x2="1"><stop offset="0" stop-color="#2b332e"/><stop offset="1" stop-color="#8f7a4a"/></linearGradient>
+<linearGradient id="card-border" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0%" stop-color="#2b332e"/>
+  <stop offset="100%" stop-color="#8f7a4a"/>
+</linearGradient>
 <style>
 .mono{font-family:"SFMono-Regular","Cascadia Code","Roboto Mono","DejaVu Sans Mono",monospace}
-@keyframes fadeUp{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
-.line{animation:fadeUp .55s ease both}
+@keyframes fadeSlide{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+.line{animation:fadeSlide 0.4s ease-out forwards}
 </style>
 </defs>
-<rect width="100%" height="100%" rx="18" fill="#0b0d0c" stroke="url(#border)" stroke-width="2"/>
-<rect x="1" y="1" width="978" height="58" rx="17" fill="#111513"/>
-<circle cx="27" cy="30" r="7" fill="#8f7a4a"/>
-<circle cx="51" cy="30" r="7" fill="#5f7f69"/>
-<circle cx="75" cy="30" r="7" fill="#d4d0c5"/>
-<text class="mono" x="105" y="37" fill="#e7e3d8" font-size="21">lymon@github — profile</text>
-<text class="mono" x="28" y="91" fill="#69f0a0" font-size="18">╭─ whoami</text>
-<text class="mono" x="28" y="119" fill="#e7e3d8" font-size="22">Abdulsattar Mohamed (lymonDa)</text>
-<text class="mono" x="28" y="145" fill="#a8ada7" font-size="16">Software Engineer &amp; Product Builder</text>
-<text class="mono line" style="animation-delay:0.65s" x="28" y="184" fill="#69f0a0" font-size="16">Now    </text>
-<text class="mono line" style="animation-delay:0.65s" x="148" y="184" fill="#e7e3d8" font-size="16">Software Engineer & Product Builder</text>
-<text class="mono line" style="animation-delay:0.71s" x="28" y="213" fill="#69f0a0" font-size="16">Prev   </text>
-<text class="mono line" style="animation-delay:0.71s" x="148" y="213" fill="#e7e3d8" font-size="16">Front-End → Full-Stack Development</text>
-<text class="mono line" style="animation-delay:0.76s" x="28" y="242" fill="#69f0a0" font-size="16">Stack  </text>
-<text class="mono line" style="animation-delay:0.76s" x="148" y="242" fill="#e7e3d8" font-size="16">TypeScript · JavaScript · Python</text>
-<text class="mono line" style="animation-delay:0.82s" x="28" y="271" fill="#e7e3d8" font-size="16">React · Next.js · Angular · Flutter</text>
-<text class="mono line" style="animation-delay:0.87s" x="28" y="300" fill="#e7e3d8" font-size="16">Node.js · Express · Fastify</text>
-<text class="mono line" style="animation-delay:0.93s" x="28" y="329" fill="#e7e3d8" font-size="16">REST APIs · Supabase · PostgreSQL · MongoDB</text>
-<text class="mono line" style="animation-delay:0.98s" x="28" y="358" fill="#e7e3d8" font-size="16">Docker · CI/CD · GitHub Actions</text>
-<text class="mono line" style="animation-delay:1.04s" x="28" y="387" fill="#e7e3d8" font-size="16">Cloud · Deployment · DevOps</text>
-<text class="mono line" style="animation-delay:1.09s" x="28" y="416" fill="#69f0a0" font-size="16">Focus  </text>
-<text class="mono line" style="animation-delay:1.09s" x="148" y="416" fill="#e7e3d8" font-size="16">Clean Code · SOLID · Design Patterns</text>
-<text class="mono line" style="animation-delay:1.15s" x="28" y="445" fill="#e7e3d8" font-size="16">System Design · API Design · Testing</text>
-<text class="mono line" style="animation-delay:1.20s" x="28" y="474" fill="#69f0a0" font-size="16">Build  </text>
-<text class="mono line" style="animation-delay:1.20s" x="148" y="474" fill="#e7e3d8" font-size="16">Web Apps · Mobile Apps · SaaS · Product Development</text>
-<text class="mono" x="28" y="552" fill="#8f7a4a" font-size="15">status</text>
-<text class="mono" x="94" y="552" fill="#a8ada7" font-size="15">building useful products, one system at a time</text>
+<rect width="100%" height="100%" rx="16" fill="#0b0d0c" stroke="url(#card-border)" stroke-width="1.8"/>
+<rect x="1" y="1" width="488" height="32" rx="15" fill="#111513"/>
+<circle cx="18" cy="16" r="4.5" fill="#8f7a4a"/>
+<circle cx="32" cy="16" r="4.5" fill="#5f7f69"/>
+<circle cx="46" cy="16" r="4.5" fill="#d4d0c5"/>
+<text class="mono" x="65" y="20" fill="#e7e3d8" font-size="11">lymon@github — profile</text>
+<g class="line" opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.35s" begin="0.1s" fill="freeze"/>
+  <text class="mono" x="24" y="62" fill="#69f0a0" font-size="13" font-weight="600">╭─ whoami</text>
+  <text class="mono" x="24" y="86" fill="#e7e3d8" font-size="17" font-weight="700">Abdulsattar Mohamed (lymonDa)</text>
+  <text class="mono" x="24" y="107" fill="#a8ada7" font-size="12.5">Software Engineer &amp; Product Builder</text>
+  <line x1="24" y1="122" x2="466" y2="122" stroke="#252b27" stroke-width="1"/>
+</g>
+<g class="line" opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.35s" begin="0.30s" fill="freeze"/>
+  <animateTransform attributeName="transform" type="translate" from="0 6" to="0 0" dur="0.35s" begin="0.30s" fill="freeze"/>
+  <text class="mono" x="24" y="148" fill="#69f0a0" font-size="12.5" font-weight="600">Now   </text>
+  <text class="mono" x="88" y="148" fill="#e7e3d8" font-size="12.5">Software Engineer &amp; Product Builder</text>
+</g>
+<g class="line" opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.35s" begin="0.38s" fill="freeze"/>
+  <animateTransform attributeName="transform" type="translate" from="0 6" to="0 0" dur="0.35s" begin="0.38s" fill="freeze"/>
+  <text class="mono" x="24" y="174" fill="#69f0a0" font-size="12.5" font-weight="600">Prev  </text>
+  <text class="mono" x="88" y="174" fill="#e7e3d8" font-size="12.5">Front-End → Full-Stack Development</text>
+</g>
+<g class="line" opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.35s" begin="0.46s" fill="freeze"/>
+  <animateTransform attributeName="transform" type="translate" from="0 6" to="0 0" dur="0.35s" begin="0.46s" fill="freeze"/>
+  <text class="mono" x="24" y="200" fill="#69f0a0" font-size="12.5" font-weight="600">Stack </text>
+  <text class="mono" x="88" y="200" fill="#e7e3d8" font-size="12.5">TypeScript · JavaScript · Python · Dart</text>
+</g>
+<g class="line" opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.35s" begin="0.54s" fill="freeze"/>
+  <animateTransform attributeName="transform" type="translate" from="0 6" to="0 0" dur="0.35s" begin="0.54s" fill="freeze"/>
+  <text class="mono" x="88" y="226" fill="#c5c9c3" font-size="12.5">React · Next.js · Angular · Flutter</text>
+</g>
+<g class="line" opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.35s" begin="0.62s" fill="freeze"/>
+  <animateTransform attributeName="transform" type="translate" from="0 6" to="0 0" dur="0.35s" begin="0.62s" fill="freeze"/>
+  <text class="mono" x="88" y="252" fill="#c5c9c3" font-size="12.5">Node.js · Express · Fastify</text>
+</g>
+<g class="line" opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.35s" begin="0.70s" fill="freeze"/>
+  <animateTransform attributeName="transform" type="translate" from="0 6" to="0 0" dur="0.35s" begin="0.70s" fill="freeze"/>
+  <text class="mono" x="88" y="278" fill="#c5c9c3" font-size="12.5">PostgreSQL · MongoDB · Supabase</text>
+</g>
+<g class="line" opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.35s" begin="0.78s" fill="freeze"/>
+  <animateTransform attributeName="transform" type="translate" from="0 6" to="0 0" dur="0.35s" begin="0.78s" fill="freeze"/>
+  <text class="mono" x="88" y="304" fill="#c5c9c3" font-size="12.5">REST APIs · System Design</text>
+</g>
+<g class="line" opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.35s" begin="0.86s" fill="freeze"/>
+  <animateTransform attributeName="transform" type="translate" from="0 6" to="0 0" dur="0.35s" begin="0.86s" fill="freeze"/>
+  <text class="mono" x="88" y="330" fill="#c5c9c3" font-size="12.5">Docker · CI/CD · GitHub Actions · DevOps</text>
+</g>
+<g class="line" opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.35s" begin="0.94s" fill="freeze"/>
+  <animateTransform attributeName="transform" type="translate" from="0 6" to="0 0" dur="0.35s" begin="0.94s" fill="freeze"/>
+  <text class="mono" x="24" y="356" fill="#69f0a0" font-size="12.5" font-weight="600">Focus </text>
+  <text class="mono" x="88" y="356" fill="#e7e3d8" font-size="12.5">Clean Code · SOLID · Design Patterns</text>
+</g>
+<g class="line" opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.35s" begin="1.02s" fill="freeze"/>
+  <animateTransform attributeName="transform" type="translate" from="0 6" to="0 0" dur="0.35s" begin="1.02s" fill="freeze"/>
+  <text class="mono" x="24" y="382" fill="#69f0a0" font-size="12.5" font-weight="600">Build </text>
+  <text class="mono" x="88" y="382" fill="#e7e3d8" font-size="12.5">Web · Mobile · SaaS · Product Engineering</text>
+</g>
+<g class="line" opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.35s" begin="1.20s" fill="freeze"/>
+  <line x1="24" y1="476" x2="466" y2="476" stroke="#252b27" stroke-width="1"/>
+  <text class="mono" x="24" y="496" fill="#8f7a4a" font-size="11.5">status</text>
+  <text class="mono" x="78" y="496" fill="#a8ada7" font-size="11.5">building useful products, one system at a time</text>
+</g>
 </svg>

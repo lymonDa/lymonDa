@@ -2,7 +2,7 @@
 
 <h3><code>lymon@github ~ $ ./contributions.sh</code></h3>
 
-<img src="./contrib-heatmap.svg" width="980" alt="Animated GitHub contribution graph">
+<img src="./contrib-heatmap.svg" width="860" alt="Animated GitHub contribution graph">
 
 <br><br>
 
@@ -11,10 +11,10 @@
 <table>
 <tr>
 <td valign="top">
-<img src="./avi-ascii.svg" width="430" alt="Animated ASCII portrait">
+<img src="./avi-ascii.svg" width="370" alt="Animated ASCII portrait">
 </td>
 <td valign="top">
-<img src="./info-card.svg" width="500" alt="Terminal-style profile information">
+<img src="./info-card.svg" width="490" alt="Terminal-style profile information">
 </td>
 </tr>
 </table>
@@ -34,7 +34,7 @@ I work across frontend, backend, mobile, APIs, databases, deployment, and automa
 ## `lymon@github:~$ stack`
 
 ```text
-Languages     TypeScript · JavaScript · Python
+Languages     TypeScript · JavaScript · Python · Dart
 Frontend      React · Next.js · Angular
 Mobile        Flutter
 Backend       Node.js · Express · Fastify
